@@ -9,7 +9,7 @@
 'use strict';
 
 const ANALYTICS = {
-  yandexCounterId: null,  // Например, ваше числовое значение из Метрики
+  yandexCounterId: 113985937,  // Например, ваше числовое значение из Метрики
   ga4MeasurementId: ''    // Например, ваш идентификатор G-XXXXXXXXXX
 };
 
@@ -45,8 +45,11 @@ function trackEvent(eventName, params = {}) {
   }
 }
 
-installAnalytics();
-
+if (window.confirm(
+  'Разрешить использование Яндекс Метрики для анализа посещений сайта?'
+)) {
+  installAnalytics();
+}
 const form = document.querySelector('#lead-form');
 const categoryField = document.querySelector('#car-category');
 const feedback = document.querySelector('#form-feedback');
