@@ -10,7 +10,7 @@
 
 const ANALYTICS = {
   yandexCounterId: 113985937,  // Например, ваше числовое значение из Метрики
-  ga4MeasurementId: ''    // Например, ваш идентификатор G-XXXXXXXXXX
+  ga4MeasurementId: 'G-QVTEXHTCHE'    // Например, ваш идентификатор G-XXXXXXXXXX
 };
 
 function installAnalytics() {
@@ -46,7 +46,7 @@ function trackEvent(eventName, params = {}) {
 }
 
 if (window.confirm(
-  'Разрешить использование Яндекс Метрики для анализа посещений сайта?'
+  'Разрешить использование Яндекс Метрики и Google Analytics для анализа посещений сайта?'
 )) {
   installAnalytics();
 }
