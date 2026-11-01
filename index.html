@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="АвтоПрофи — учебная целевая страница автосалона: подбор автомобилей, онлайн-заявка и запись на тест-драйв.">
+  <title>АвтоПрофи — Подбор автомобиля и тест-драйв</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="АвтоПрофи — наверх">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 29 12 17c.6-2 2.5-3.5 4.7-3.5h14.6c2.2 0 4.1 1.5 4.7 3.5l4 12"/>
+            <path d="M8 29h32v9h-6v-4H14v4H8z"/><path d="M12 29l6-10h12l6 10"/>
+          </svg>
+        </span>
+        <span class="brand-text"><strong>АВТОПРОФИ</strong><small>АВТОСАЛОН • УЧЕБНЫЙ ПРОЕКТ</small></span>
+      </a>
+      <nav aria-label="Основное меню" class="main-nav">
+        <a href="#benefits">Преимущества</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#process">Как это работает</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <a href="#application" class="button button-small button-gradient track-cta" data-cta="header">Оставить заявку <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span> Подбор автомобилей онлайн</div>
+          <h1 id="hero-title">Ваш следующий автомобиль <span>начинается здесь.</span></h1>
+          <p class="hero-lead">Изучайте категории автомобилей, выбирайте по своим требованиям и оставляйте заявку на тест-драйв в учебной системе автосалона «АвтоПрофи».</p>
+          <div class="hero-actions">
+            <a class="button button-gradient track-cta" href="#catalog" data-cta="hero_catalog">Подобрать автомобиль <span aria-hidden="true">→</span></a>
+            <a class="button button-outline track-cta" href="#application" data-cta="hero_testdrive">Записаться на тест-драйв</a>
+          </div>
+          <div class="hero-highlights" aria-label="Основные возможности">
+            <span>✓ Онлайн-каталог</span>
+            <span>✓ Подбор по параметрам</span>
+            <span>✓ Электронная заявка</span>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="visual-tag">АВТОПРОФИ <span> / КАТАЛОГ</span></div>
+          <img src="assets/avto-hero.webp" alt="Реалистичное изображение синего легкового автомобиля" width="900" height="375">
+          <div class="hero-media-caption"><span class="mini-circle"></span> Найдите автомобиль под свои задачи</div>
+          <span class="media-orbit" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="hero-bottom" aria-hidden="true"></div>
+    </section>
+
+    <section class="section benefits" id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-heading"><div><div class="overline">ЦИФРОВЫЕ ВОЗМОЖНОСТИ</div><h2 id="benefits-title">Всё необходимое для выбора авто</h2></div><p>От первого знакомства с моделью до заявки — в одной информационной системе.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><div class="benefit-number">01</div><h3>Каталог автомобилей</h3><p>Знакомство с категориями, техническими характеристиками и доступными вариантами.</p><span class="benefit-icon" aria-hidden="true">▦</span></article>
+          <article class="benefit-card"><div class="benefit-number">02</div><h3>Персональный подбор</h3><p>Выбор автомобиля с учётом предпочтений, бюджета и особенностей эксплуатации.</p><span class="benefit-icon" aria-hidden="true">⌕</span></article>
+          <article class="benefit-card"><div class="benefit-number">03</div><h3>Запись на тест-драйв</h3><p>Создание учебной заявки с указанием интересующего типа автомобиля и цели обращения.</p><span class="benefit-icon" aria-hidden="true">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section-heading"><div><div class="overline">ПОДБЕРИТЕ СВОЙ ВАРИАНТ</div><h2 id="catalog-title">Категории автомобилей</h2></div><p>Ниже показаны учебные категории, а не предложения о продаже конкретных автомобилей.</p></div>
+        <div class="catalog-grid">
+          <article class="car-card">
+            <div class="car-art art-sedan"><span class="car-art-label">01 / CITY</span><span class="car-glyph" aria-hidden="true">🚘</span></div>
+            <div class="car-content"><span class="car-type">ГОРОДСКИЕ ПОЕЗДКИ</span><h3>Седан</h3><p>Комфорт для ежедневных поездок по городу и трассе.</p><button type="button" class="button button-dark choose-car" data-car="Седан">Выбрать седан <span aria-hidden="true">→</span></button></div>
+          </article>
+          <article class="car-card">
+            <div class="car-art art-crossover"><span class="car-art-label">02 / FAMILY</span><span class="car-glyph" aria-hidden="true">🚙</span></div>
+            <div class="car-content"><span class="car-type">ГОРОД И ПУТЕШЕСТВИЯ</span><h3>Кроссовер</h3><p>Практичный вариант для семьи, поездок и активного отдыха.</p><button type="button" class="button button-dark choose-car" data-car="Кроссовер">Выбрать кроссовер <span aria-hidden="true">→</span></button></div>
+          </article>
+          <article class="car-card">
+            <div class="car-art art-suv"><span class="car-art-label">03 / ADVENTURE</span><span class="car-glyph" aria-hidden="true">🚗</span></div>
+            <div class="car-content"><span class="car-type">СЛОЖНЫЕ МАРШРУТЫ</span><h3>Внедорожник</h3><p>Для тех, кому важны вместительность и проходимость.</p><button type="button" class="button button-dark choose-car" data-car="Внедорожник">Выбрать внедорожник <span aria-hidden="true">→</span></button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading centered"><div class="overline">ПРОСТОЙ ПОРЯДОК ДЕЙСТВИЙ</div><h2 id="process-title">Как работает АвтоПрофи</h2><p>Четыре шага от выбора категории до оформления заявки.</p></div>
+        <ol class="steps"><li><span class="step-number">1</span><h3>Выберите категорию</h3><p>Определите, какой автомобиль подходит для ваших целей.</p></li><li><span class="step-number">2</span><h3>Изучите условия</h3><p>Уточните интересующие характеристики и формат покупки.</p></li><li><span class="step-number">3</span><h3>Оставьте заявку</h3><p>Заполните учебную форму ниже и получите её номер.</p></li><li><span class="step-number">4</span><h3>Проверьте результат</h3><p>Посмотрите подтверждение сохранения в этой вкладке.</p></li></ol>
+      </div>
+    </section>
+
+    <section class="section application" id="application" aria-labelledby="application-title">
+      <div class="container application-layout">
+        <div class="application-copy"><div class="overline overline-light">НАЧНИТЕ С ЗАЯВКИ</div><h2 id="application-title">Расскажите, какой автомобиль вам нужен</h2><p>Подберите категорию и выберите цель обращения. Эта форма создана для лабораторной работы №10 и не связана с реальным автосалоном.</p><ul class="check-list"><li>Подбор по предпочтениям</li><li>Обращение по условиям приобретения</li><li>Запись на тест-драйв (учебный пример)</li><li>Подтверждение сохранения заявки в браузере</li></ul><div class="privacy-note">Данные формы не передаются на сервер. Учебная заявка хранится только в текущей вкладке браузера до её закрытия.</div></div>
+        <form class="application-form" id="lead-form" novalidate>
+          <div class="form-top"><span class="form-label">УЧЕБНАЯ ЗАЯВКА</span><h3>Оставить заявку</h3><p>Все поля, кроме комментария, обязательны.</p></div>
+          <div class="form-grid">
+            <div class="field"><label for="customer-name">Ваше имя</label><input id="customer-name" name="name" autocomplete="name" placeholder="Введите имя" maxlength="60" required></div>
+            <div class="field"><label for="customer-phone">Телефон</label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (999) 123-45-67" maxlength="24" required></div>
+            <div class="field"><label for="car-category">Автомобиль</label><select id="car-category" name="car" required><option value="">Выберите категорию</option><option>Седан</option><option>Кроссовер</option><option>Внедорожник</option><option>Хэтчбек</option><option>Универсал</option><option>Электромобиль</option><option>Нужна помощь с выбором</option></select></div>
+            <div class="field"><label for="request-kind">Цель обращения</label><select id="request-kind" name="request" required><option>Подбор автомобиля</option><option>Запись на тест-драйв</option><option>Консультация</option><option>Условия покупки</option></select></div>
+          </div>
+          <div class="field"><label for="customer-message">Комментарий <span class="optional">(необязательно)</span></label><textarea id="customer-message" name="message" maxlength="300" rows="3" placeholder="Например: интересует экономичный автомобиль для семьи"></textarea></div>
+          <label class="consent"><input id="demo-consent" type="checkbox" required><span>Понимаю, что это учебная форма: данные не направляются в настоящий автосалон.</span></label>
+          <button type="submit" class="button button-gradient button-full" id="submit-lead">Сохранить учебную заявку <span aria-hidden="true">→</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          <p class="form-bottom-note">Никаких реальных бронирований или платежей.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title"><div class="container faq-layout"><div><div class="overline">ЧАСТЫЕ ВОПРОСЫ</div><h2 id="faq-title">Что важно знать?</h2><p>Ответы о работе демонстрационной страницы.</p></div><div class="faq-list"><details><summary>Можно ли купить автомобиль прямо здесь?</summary><p>Нет. Это учебная Landing Page. Она демонстрирует каталог категорий автомобилей и сохранение заявки в браузере.</p></details><details><summary>Как работает кнопка «Выбрать автомобиль»?</summary><p>Она выбирает категорию в форме и переносит вас к блоку учебной заявки.</p></details><details><summary>Отправляются ли мои данные в автосалон?</summary><p>Нет. Данные сохраняются только в sessionStorage текущей вкладки браузера и не отправляются по сети.</p></details><details><summary>Можно ли подключить Яндекс Метрику и Google Analytics 4?</summary><p>Да. В файле script.js предусмотрены события и поля для идентификаторов собственных счётчиков. Пока идентификаторы не заданы, аналитика не передаётся внешним сервисам.</p></details></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a href="#top" class="footer-brand">АВТОПРОФИ <span>↗</span></a><div>Учебный проект «Информационная система управления автосалоном»<br>Лабораторная работа №10 • НИУ «БелГУ» • 2026</div><a href="#top" class="backtop">Наверх ↑</a></div></footer>
+</body>
+</html>
